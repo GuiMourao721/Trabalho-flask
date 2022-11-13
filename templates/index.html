@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Pagina Principal</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            align-items: center;
+        }
+
+        .card {
+            padding: 10px;
+
+        }
+
+        .card li:hover{
+            border-radius: 10%;
+
+            color: white;
+        }
+
+        .card li, a {
+            text-decoration-line: none;
+            font-size: 30px;
+            margin-bottom: 15px;
+            list-style-type: none;
+        }
+
+        #sobre{
+            margin-top: 80px;
+
+        }
+        #sobre a{
+            color: white;
+        }
+
+        #sobre a:hover{
+            border-radius: 10%;
+            padding: 10px;
+            color: black;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <article>
+
+        <div id="title">
+
+            <h1>SEJA Bem vindo</h1> <br>
+            <h2>Escolha uma das opções a seguir:</h2>
+        </div>
+        
+        <section class="card">
+             <h1>Funções</h1><br>
+             <a href="{{url_for ('static', filename='criar.html')}}"><li>Cadastrar</li></a>
+             <a href="{{url_for ('static', filename='consulta.html')}}"><li>Consultar</li></a>
+             <a href="{{url_for ('static', filename='atualizar.html')}}"><li>Atualizar</li></a>
+             <a href="{{url_for ('static', filename='remove.html')}}"><li>Remover</li></a>
+        </section>
+
+    </article>
+
+</main>
+
+<footer>
+
+
+</footer>
+
+</body>
+
+</html>

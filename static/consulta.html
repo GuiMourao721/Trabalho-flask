@@ -1,0 +1,62 @@
+<html>
+<body>
+<footer>
+
+    <nav id="sobre">
+        <a href="http://localhost:5000/">VOLTAR</a>
+    </nav>
+</footer>
+    <style>
+        body {
+        text-align: center;
+        align-items: center;
+        background-color: black;
+        color: aliceblue;
+    }
+        div{
+            margin-top: 100px;
+            margin-right: 500px;
+            margin-left: 500px;
+            border: 3px solid red;
+            border-radius: 10px;
+        }
+        #sobre{
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+        #sobre a{
+            color: white;
+        }
+
+        #sobre a:hover{
+            border-radius: 10%;
+            padding: 10px;
+            color: black;
+            background-color: aliceblue;
+        }
+</style>
+<form action = "http://localhost:5000/consulta" method = "post">
+    <p>FILTRO:</p>
+    <p>ID: <input type="number"  name = "id" value="1">  <input type="radio" name="nome-r" value="1"></p>
+    <p>NOME: <input type="text"  name = "nome" value="">  <input type="radio" name="nome-r" value="2"></p>
+    <p>EMPRESA: <input type="text" name = "empresa">  <input type="radio" name="nome-r" value="3"></p>
+    <p>TELEFONE: <input type="text"  name = "telefone">  <input type="radio" name="nome-r" value="4"></p>
+    <p>EMAIL: <input type="email" name = "email">  <input type="radio" name="nome-r" value="5"></p>
+    <p>TUDO: <input type="radio" name="nome-r" value="6"></p>
+    <p><input hidden type="radio" name="nome-r" value="6" checked></p>
+    <p><input type = "submit" value = "Consultar"></p>
+
+
+</form>
+</body>
+</html>
+
+    <style>
+        body {
+        text-align: center;
+        align-items: center;
+        background-color: black;
+        color: aliceblue;
+    }
+    </style>
+</html>
